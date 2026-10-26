@@ -23,5 +23,5 @@
 <section id="downloads" class="downloads"><div class="section-head"><h2>모델과 렌더 다운로드</h2><p>수정 가능한 Blender 원본과 범용 GLB 모델, 고해상도 전신 이미지를 제공합니다.</p></div><div class="download-grid"><a class="download" href="downloads/Bastion_Industrial_Walker.blend" download><div><strong>Blender 원본</strong><span>메카 · 격납고 · 재질 · 조명 · 카메라</span></div><b>↓</b></a><a class="download" href="downloads/Bastion_Industrial_Walker.glb" download><div><strong>GLB 모델</strong><span>메카 단독 · 범용 3D 뷰어 및 엔진용</span></div><b>↓</b></a><a class="download" href="media/Bastion_Hero.png" download><div><strong>격납고 전신 렌더</strong><span>PNG · 1200 × 1400</span></div><b>↓</b></a><a class="download" href="downloads/Bastion_Concept_Pack.zip" download><div><strong>전체 콘셉트 패키지</strong><span>모델 · 모든 검수 이미지 · 생성 스크립트</span></div><b>↓</b></a></div><p class="note">콘셉트 디자인용 정적 모델입니다. 리깅·애니메이션·게임용 LOD는 포함하지 않습니다. GLB에는 메카만 포함되며, 지하 격납고와 조명은 Blender 원본에서 편집할 수 있습니다.</p></section>
 </main><footer class="wrap"><strong>BASTION B-07</strong><span>ORIGINAL PARAMETRIC 3D CONCEPT / Z-UP / METRIC</span></footer>
 <script type="importmap">{"imports":{"three":"./src/vendor/three.module.min.js","three/addons/":"./src/vendor/addons/"}}</script>
-<script type="module" src="src/main.js?v=3"></script>
+<script type="module">import(`./src/main.js?t=${Math.floor(Date.now() / 60000)}`); // 분 단위 캐시 무효화</script>
 </body></html>
